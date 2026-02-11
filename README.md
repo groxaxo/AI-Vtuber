@@ -8,7 +8,9 @@
 
 # ✨ Luna AI  ✨
 
-
+> **Special Thanks / 特别感谢**: This project is a fork of the original [Luna AI](https://github.com/Ikaros-521/AI-Vtuber) created by [Ikaros-521](https://github.com/Ikaros-521). We are grateful for their pioneering work in AI VTuber technology and the open-source community.
+> 
+> 本项目是原作者 [Ikaros-521](https://github.com/Ikaros-521) 创建的 [Luna AI](https://github.com/Ikaros-521/AI-Vtuber) 的分支版本。我们感谢他们在AI虚拟主播技术和开源社区的开创性工作。
 
 [![][python]][python]
 [![][github-release-shield]][github-release-link]
