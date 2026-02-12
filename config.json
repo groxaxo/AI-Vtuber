@@ -11,7 +11,7 @@
   "room_display_id": "278333",
   "chat_type": "reread",
   "need_lang": "none",
-  "before_prompt": "请简要回复:",
+  "before_prompt": "Please respond briefly:",
   "after_prompt": "",
   "comment_template": {
     "enable": false,
@@ -26,8 +26,8 @@
     ],
     "username_max_le": 10
   },
-  "comment_log_type": "回答",
-  "visual_body": "其他",
+  "comment_log_type": "answer",
+  "visual_body": "other",
   "luoxi_project": {
     "Live_Comment_Assistant": {
       "enable": false,
@@ -43,7 +43,7 @@
         "schedule"
       ],
       "trigger_position": [
-        "消息产生时"
+        "on_message_generated"
       ]
     }
   },
@@ -52,7 +52,7 @@
   },
   "unity": {
     "api_ip_port": "http://127.0.0.1:5700/add",
-    "password": "中文的密码，怕了吧！"
+    "password": "example_password"
   },
   "EasyAIVtuber": {
     "api_ip_port": "http://127.0.0.1:7888"
@@ -83,7 +83,7 @@
     "api_ip_port": "http://127.0.0.1:5600"
   },
   "bilibili": {
-    "login_type": "手机扫码",
+    "login_type": "phone_scan",
     "username": "",
     "password": "",
     "cookie": "",
@@ -312,7 +312,7 @@
     "top_p": 1.0,
     "presence_penalty": 0.0,
     "frequency_penalty": 0.0,
-    "preset": "请扮演一个AI虚拟主播。不要回答任何敏感问题！不要强调你是主播，只需要回答问题！",
+    "preset": "Please act as an AI virtual streamer. Do not answer any sensitive questions! Do not emphasize that you are a streamer, just answer questions!",
     "stream": true
   },
   "gpt4free": {
@@ -321,7 +321,7 @@
     "model": "gpt-3.5-turbo",
     "max_tokens": 2048,
     "proxy": "http://127.0.0.1:10809",
-    "preset": "请扮演一个AI虚拟主播。不要回答任何敏感问题！不要强调你是主播，只需要回答问题！",
+    "preset": "Please act as an AI virtual streamer. Do not answer any sensitive questions! Do not emphasize that you are a streamer, just answer questions!",
     "history_enable": true,
     "history_max_len": 300
   },
@@ -1734,9 +1734,9 @@
       "max_file_size": "100 MB"
     },
     "theme": {
-      "choose": "蓝天白云",
+      "choose": "blue_sky_white_clouds",
       "list": {
-        "蓝粉渐变": {
+        "blue_pink_gradient": {
           "login_card": "width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;position: fixed;left: 0;top: 0;background: linear-gradient(45deg, #3494E6, #EC6EAD);",
           "tab_panel": "background: linear-gradient(45deg, #3494E6, #EC6EAD);",
           "card": "margin:10px 0px;background: linear-gradient(45deg, #3494E6, #EC6EAD);",
@@ -1747,7 +1747,7 @@
           "switch_internal": "",
           "echart": "width:100%; height:600px;"
         },
-        "默认黑白": {
+        "default_black_white": {
           "login_card": "width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;position: fixed;left: 0;top: 0;",
           "tab_panel": "",
           "card": "margin:10px 0px;",
@@ -1758,7 +1758,7 @@
           "switch_internal": "",
           "echart": "width:100%; height:600px;"
         },
-        "蓝天白云": {
+        "blue_sky_white_clouds": {
           "login_card": "background:linear-gradient(45deg, #6eb9f2, #8dceff);width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;position: fixed;left: 0;top: 0;",
           "tab_panel": "background: linear-gradient(45deg, #6eb9f2, #8dceff);",
           "card": "margin:10px 0px;background: linear-gradient(45deg, #e3e8ef, #ffffff);",
@@ -1769,7 +1769,7 @@
           "switch_internal": "",
           "echart": "width:100%; height:600px;"
         },
-        "极地极光": {
+        "polar_aurora": {
           "login_card": "background:linear-gradient(45deg, #027333, #025959);width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;position: fixed;left: 0;top: 0;",
           "tab_panel": "background: linear-gradient(45deg, #027333, #025959);",
           "card": "margin:10px 0px;background: linear-gradient(45deg, #027333, #04D939);",
@@ -1780,7 +1780,7 @@
           "switch_internal": "",
           "echart": "width:100%; height:600px;"
         },
-        "曲奇饼干": {
+        "cookie_biscuit": {
           "login_card": "background:linear-gradient(45deg, #F2BC8D, #73341D);width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;position: fixed;left: 0;top: 0;",
           "tab_panel": "background: linear-gradient(45deg, #F2BC8D, #73341D);",
           "card": "margin:10px 0px;background: linear-gradient(45deg, #F2BC8D, #73341D);",
