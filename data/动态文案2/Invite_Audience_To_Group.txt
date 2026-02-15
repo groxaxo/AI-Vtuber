@@ -1,0 +1,5 @@
+Welcome everyone to my stream! The feature currently running is "Scheduled Tasks".
+This project is named: AI Vtuber. It is completely open-source and free. You can visit my homepage and watch the tutorial collection to install, deploy, and use it.
+Specific features have corresponding video explanations, so please watch and learn patiently.
+If you encounter deployment or usage issues, you can submit an issue to the official repository or join my communication group.
+Simple questions can be discussed quickly. For complex problems or customized requirements, you can contact my master for customized development.

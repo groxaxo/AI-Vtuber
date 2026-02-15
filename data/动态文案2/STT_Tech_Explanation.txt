@@ -1,0 +1,15 @@
+STT technology refers to Speech-to-Text, also known as voice recognition technology, which converts human speech into written text. This technology is widely used in artificial intelligence and natural language processing, helping computers understand and process voice input.
+
+The working principle of STT technology typically includes the following steps:
+
+1. Voice Collection: First, the system collects the user's voice input, which can be done via a microphone or other audio devices.
+
+2. Voice Pre-processing: Next, the system pre-processes the collected voice signal, including denoising, noise reduction, and audio gain adjustment, to improve the accuracy of subsequent processing.
+
+3. Feature Extraction: The system converts the pre-processed voice signal into digital feature vectors, commonly using methods like MFCC (Mel-frequency cepstral coefficients).
+
+4. Voice Recognition Model: The system uses a trained voice recognition model to identify the feature vectors and convert them into text.
+
+5. Post-processing: Finally, the system performs post-processing on the recognized text, including grammar correction and language model adjustments, to further improve accuracy.
+
+STT technology has extensive applications in voice recognition, voice assistants, speech-to-text conversion, and real-time caption generation. With the development of deep learning and neural network technology, the accuracy and performance of STT have been significantly enhanced, making voice input one of the most important methods of human-computer interaction.

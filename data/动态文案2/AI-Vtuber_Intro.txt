@@ -1,0 +1,7 @@
+AI Vtuber is a virtual AI streamer that combines cutting-edge technology. Its core is a series of efficient artificial intelligence models, including ChatterBot, GPT, Claude, langchain, chatglm, text-generation-webui, iFlytek Spark, Zhipu AI, Google Bard, ERNIE Bot, Tongyi Xingchen, Qianfan Large Model, Gemini, Kimi Chat, QAnything, koboldcpp, and AnythingLLM. These models can either run locally or be supported via cloud services.
+
+The appearance of AI Vtuber is crafted using Live2D, Vtube Studio, xuniren, and UE5 combined with Audio2Face technology, providing users with a vivid and interactive virtual avatar. This enables AI Vtuber to perform real-time interactive streaming on major platforms such as Bilibili, Douyin, Kuaishou, WeChat Channels, Douyu, YouTube, Twitch, and TikTok. Of course, it can also engage in personalized conversations with you in a local environment.
+
+To make communication more natural, AI Vtuber employs advanced natural language processing technology combined with text-to-speech systems such as Edge-TTS, VITS-Fast, elevenlabs, VALL-E-X, Reecho AI, tts.ai-lab.top, OpenVoice, GPT_SoVITS, clone-voice, and Azure TTS. This not only allows it to generate fluent answers but also enables voice transformation through so-vits-svc and DDSP-SVC to adapt to different scenarios and characters.
+
+Additionally, AI Vtuber can collaborate with Stable Diffusion through specific commands to showcase artwork. Users can also customize copywriting for AI Vtuber to loop, meeting the needs of various occasions.

@@ -18,21 +18,21 @@ REM 循环遍历文件列表并删除文件
 for %%F in (%file_list%) do (
     if exist "%%F" (
         del /f /q "%%F"
-        echo 删除文件 '%%F' 成功。
+        echo Deleted file '%%F' successfully.
     ) else (
-        echo 文件 '%%F' 不存在，无需删除。
+        echo File '%%F' does not exist, no need to delete.
     )
 )
 
-REM 循环遍历文件夹列表并删除文件夹
+REM Loop through folder list and delete folders
 for %%D in (%folder_list%) do (
     if exist "%%D" (
         rd /s /q "%%D"
-        echo 删除文件夹 '%%D' 成功。
+        echo Deleted folder '%%D' successfully.
     ) else (
-        echo 文件夹 '%%D' 不存在，无需删除。
+        echo Folder '%%D' does not exist, no need to delete.
     )
 )
 
-REM 这里是脚本的其他部分，不会因为文件或文件夹不存在而受影响，可以继续运行。
+REM Other parts of script
 pause
