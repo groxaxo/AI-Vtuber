@@ -736,6 +736,7 @@ def start_server():
                         "baidu",
                         "faster_whisper",
                         "sensevoice",
+                        "custom_asr",
                     ]:
                         FORMAT = pyaudio.paInt16
                         CHANNELS = config.get("talk", "CHANNELS")
@@ -838,6 +839,33 @@ def start_server():
 
                             content = remove_angle_brackets_content(res[0]["text"])
                             talk_handle(content)
+                        elif config.get("talk", "type") == "custom_asr":
+                            try:
+                                import requests
+
+                                url = (config.get("talk", "custom_asr", "api_ip_port") or "").rstrip("/")
+                                if url == "":
+                                    logger.error("Custom ASR error: talk.custom_asr.api_ip_port is empty")
+                                    continue
+                                if not url.endswith("/transcriptions"):
+                                    url = f"{url}/audio/transcriptions"
+
+                                with open(WAVE_OUTPUT_FILENAME, "rb") as f:
+                                    files = {"file": ("audio.wav", f, "audio/wav")}
+                                    data = {"model": "whisper-1"}
+                                    response = requests.post(
+                                        url, files=files, data=data, timeout=30
+                                    )
+
+                                if response.status_code == 200:
+                                    content = response.json().get("text", "")
+                                    if content != "":
+                                        talk_handle(content)
+                                else:
+                                    logger.error(f"Custom ASR error: {response.text}")
+                            except Exception as e:
+                                logger.error(f"Custom ASR exception: {e}")
+
                     elif "google" == config.get("talk", "type"):
                         r = sr.Recognizer()
 
@@ -1573,7 +1601,6 @@ def start_server():
     if config.get("visual_body") == "metahuman_stream":
 
         def metahuman_stream_is_speaking():
-
             try:
                 from urllib.parse import urljoin
 

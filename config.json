@@ -5,11 +5,11 @@
     "password": "123456",
     "ums_api": "http://127.0.0.1:1119"
   },
-  "api_ip": "127.0.0.1",
+  "api_ip": "0.0.0.0",
   "api_port": 8082,
   "platform": "talk",
   "room_display_id": "278333",
-  "chat_type": "reread",
+  "chat_type": "custom_llm",
   "need_lang": "none",
   "before_prompt": "Please respond briefly:",
   "after_prompt": "",
@@ -529,14 +529,17 @@
   },
   "custom_llm": {
     "url": "http://127.0.0.1:11434/v1/chat/completions",
-    "headers": "Content-Type:application/json\nAuthorization:Bearer sk",
+    "headers": "Content-Type:application/json",
     "method": "POST",
     "proxies": "{}",
     "body_type": "json",
-    "body": "{\"model\":\"qwen:latest\",\"messages\":[{\"role\":\"user\",\"content\":\"{{prompt}}\"}]}",
+    "body": "{\"model\":\"qwen2\",\"messages\":[{\"role\":\"user\",\"content\":\"{{prompt}}\"}]}",
     "resp_data_type": "json",
     "data_analysis": "resp[\"choices\"][0][\"message\"][\"content\"]",
     "resp_template": "{data}"
+  },
+  "custom_tts": {
+    "api_ip_port": "http://127.0.0.1:8021/voice?id=0&text={content}"
   },
   "local_qa": {
     "periodic_trigger": {
@@ -559,7 +562,7 @@
       "similarity": 0.5
     }
   },
-  "audio_synthesis_type": "edge-tts",
+  "audio_synthesis_type": "custom_tts",
   "audio_random_speed": {
     "normal": {
       "enable": false,
@@ -892,7 +895,10 @@
     "no_recording_during_playback": true,
     "no_recording_during_playback_sleep_interval": 1.0,
     "username": "Master",
-    "type": "google",
+    "type": "custom_asr",
+    "custom_asr": {
+        "api_ip_port": "http://100.85.200.51:5092/v1"
+    },
     "continuous_talk": false,
     "trigger_key": "Q",
     "stop_trigger_key": "S",

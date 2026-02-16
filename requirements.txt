@@ -1,12 +1,13 @@
 requests==2.32.3
-git+https://gitee.com/ikaros-521/WenxinWorkshop-Python-SDK
-git+https://gitee.com/ikaros-521/blivedm
-git+https://gitee.com/ikaros-521/sparkdesk-api
+# git+https://gitee.com/ikaros-521/WenxinWorkshop-Python-SDK
+# git+https://gitee.com/ikaros-521/blivedm
+# git+https://gitee.com/ikaros-521/sparkdesk-api
 openai
 pygame
 edge-tts==6.1.6
 langid
-aiohttp==3.9.1
+# aiohttp==3.9.1
+aiohttp>=3.9.3
 asyncio
 slack_sdk==3.21.3
 profanity==1.1
@@ -31,59 +32,16 @@ SpeechRecognition
 baidu-aip
 chardet
 pypinyin
-gradio_client>=1.3.0
+# gradio_client>=1.3.0
 schedule
-bilibili-api-python
-langchain==0.0.142
-playwright
-protobuf==3.20.3
-certifi
-charset-normalizer
-greenlet
-idna
-lxml
-pyee
-typing_extensions
-urllib3==2.2.2
-pyhandytools
-curl_cffi
-zhipuai
-bardapi
-revTongYi
-pyautogui
-nicegui==1.4.30
-pytchat
-PySocks
-pure-protobuf==3.0.0a5
-xingchen==1.1.5
-emoji
-google-generativeai
-colorlog
-faster_whisper
-httpx==0.25.2
-Pillow==10.1.0
-pygtrans
-jieba
-gradio==4.16.0
-TikTokLive
-azure-cognitiveservices-speech
-pyjwt
-dashscope
-pygetwindow
-opencv-python
-g4f
-starlette==0.36.3
-pyserial
-
-# dy2
-betterproto==2.0.0b6
-
-loguru
-
-# asr
-funasr==1.1.3
-
-volcengine-python-sdk[ark]
+# bilibili-api-python
+# zhipuai
+# bardapi
+# google-generativeai
+# TikTokLive
+# azure-cognitiveservices-speech
+# dashscope
+# volcengine-python-sdk[ark]
 
 # google-cloud-aiplatform==1.68.0
 
